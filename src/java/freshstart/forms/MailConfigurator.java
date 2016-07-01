@@ -22,14 +22,14 @@ public class MailConfigurator {
         this.props.setProperty("mail.smtp.auth", smtpAuth);
     }
     
-    public void passwordAuthentication(String userName, String password) {
+    /*public void passwordAuthentication(String userName, String password) {
         this.auth = new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(userName, password);
             }
         };
-    }
+    }*/
     
     public Session getSession() {
         this.session = Session.getDefaultInstance(this.props, this.auth);
