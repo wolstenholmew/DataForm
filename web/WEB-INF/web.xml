@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <servlet>
+        <servlet-name>validateContact</servlet-name>
+        <jsp-file>/jsp/ValidateContact.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>formRetry</servlet-name>
+        <jsp-file>/jsp/FormRetry.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>validateContact</servlet-name>
+        <url-pattern>/jsp/ValidateContact.jsp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>formRetry</servlet-name>
+        <url-pattern>/jsp/FormRetry.jsp</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
